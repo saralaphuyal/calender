@@ -1,0 +1,105 @@
+.calender {
+  display: block;
+  width: 350px;
+  max-width: 100%;
+  background: transparent;
+  // border: 1px solid white;
+  //   height: 20rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
+.top {
+  display: flex;
+  height: 44px;
+  margin-bottom: 1em;
+  gap: 1rem;
+  border-bottom: 1px solid #fff;
+  align-items: center;
+  padding: 0px 4px;
+  button {
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    margin: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+  }
+}
+
+.dateButton {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.weekDays {
+  display: flex;
+  div {
+    flex: 0 0 14.2857%;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 2rem 0;
+    text-transform: uppercase;
+  }
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+}
+.singleDays {
+  background-color: transparent;
+  color: #fff;
+  flex: 0 0 14.2857%;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  font-size: 13px;
+}
+
+.yearMonths,
+.years {
+  display: flex;
+  flex-wrap: wrap;
+  button {
+    background-color: transparent;
+    color: #fff;
+    flex: 0 0 33.3333%;
+    overflow: hidden;
+    padding: 2em 0.5em;
+    margin: 0;
+    border: 0;
+    outline: none;
+    text-align: center;
+    line-height: 16px;
+  }
+  button:hover {
+    background-color: gray;
+    cursor: pointer;
+  }
+}
+
+.colorDescription {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  max-width: 100%;
+
+  .colorSpec {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    padding: 0.7rem 0;
+  }
+}
